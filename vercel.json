@@ -2,16 +2,43 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
   "rewrites": [
-    { "source": "/page-grader/:path*", "destination": "https://onpage-grader.vercel.app/:path*" },
-    { "source": "/cannibalization-checker/:path*", "destination": "https://cannibalization-checker.vercel.app/:path*" },
-    { "source": "/internal-linking/:path*", "destination": "https://internal-linking-tool-kappa.vercel.app/:path*" }
+    {
+      "source": "/page-grader/",
+      "destination": "https://onpage-grader.vercel.app/index.html"
+    },
+    {
+      "source": "/cannibalization-checker/",
+      "destination": "https://cannibalization-checker.vercel.app/index.html"
+    },
+    {
+      "source": "/internal-linking/",
+      "destination": "https://internal-linking-tool-kappa.vercel.app/index.html"
+    },
+    {
+      "source": "/page-grader/:path*",
+      "destination": "https://onpage-grader.vercel.app/:path*"
+    },
+    {
+      "source": "/cannibalization-checker/:path*",
+      "destination": "https://cannibalization-checker.vercel.app/:path*"
+    },
+    {
+      "source": "/internal-linking/:path*",
+      "destination": "https://internal-linking-tool-kappa.vercel.app/:path*"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]
