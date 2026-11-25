@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moz API Tools: content, cannibalization and internal linking tools</title>
+<meta name="description" content="Free tools built on the Moz API and Claude: an on-page grader for SEO and AI search, a keyword cannibalization checker and an internal linking tool.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5fd6'/%3E%3Ctext x='16' y='21.5' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='white' text-anchor='middle'%3EMT%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg:#f7f8fa; --panel:#fff; --ink:#14181f; --muted:#5b6472; --line:#e3e6eb; --accent:#1f5fd6; --accent-soft:#eaf1fd; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif; }
+  header.top { display:flex; align-items:center; gap:10px; padding:16px 28px; border-bottom:1px solid var(--line); background:var(--panel); }
+  .logo { width:30px; height:30px; border-radius:7px; background:var(--accent); color:#fff; display:grid; place-items:center; font-weight:700; font-size:12.5px; }
+  header.top b { font-size:16px; }
+  main { max-width:1080px; margin:0 auto; padding:48px 28px 64px; }
+  h1 { font-size:34px; line-height:1.15; margin:0 0 8px; letter-spacing:-.01em; }
+  .lede { color:var(--muted); margin:0 0 32px; max-width:640px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+  a.card { display:flex; flex-direction:column; gap:10px; padding:22px 22px 20px; background:var(--panel); border:1px solid var(--line); border-radius:12px; color:inherit; text-decoration:none; transition:border-color .15s, box-shadow .15s; }
+  a.card:hover, a.card:focus-visible { border-color:var(--accent); box-shadow:0 2px 10px rgba(31,95,214,.08); outline:none; }
+  .ic { width:36px; height:36px; border-radius:9px; background:var(--accent-soft); color:var(--accent); display:grid; place-items:center; }
+  .card h2 { font-size:17px; margin:2px 0 0; }
+  .card p { margin:0; color:var(--muted); min-height:4.65em; }
+  .card ul { margin:0; padding-left:18px; color:var(--muted); font-size:13.5px; flex:1; }
+  .open { color:var(--accent); font-weight:600; font-size:14px; margin-top:6px; }
+  .note { margin-top:36px; padding:16px 18px; background:var(--panel); border:1px solid var(--line); border-radius:12px; color:var(--muted); font-size:14px; }
+  .note b { color:var(--ink); }
+  footer { color:var(--muted); font-size:13px; text-align:center; padding:0 28px 32px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="logo">MT</div><b>Moz API Tools</b></header>
+<main>
+  <h1>Moz API Tools</h1>
+  <p class="lede">Content and SEO tools built on the Moz API and Claude. Pick a tool to get started.</p>
+  <div class="grid">
+    <a class="card" href="/page-grader/">
+      <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+      <h2>On-page grader for SEO &amp; AI search</h2>
+      <p>Editor-style feedback on a draft or live page, checked against the full text of what ranks today.</p>
+      <ul><li>Competitive gap analysis against the top 10</li><li>Evidence, search intent and readability</li><li>Internal links both ways</li></ul>
+      <span class="open">Open →</span>
+    </a>
+    <a class="card" href="/cannibalization-checker/">
+      <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg></div>
+      <h2>Keyword cannibalization checker</h2>
+      <p>Find pages on your site competing for the same keywords, and check whether you already cover a topic before you write.</p>
+      <ul><li>Your full URL library, built automatically</li><li>Cannibalized keywords and topic overlaps</li><li>Add your own Search Console and GA4 data</li></ul>
+      <span class="open">Open →</span>
+    </a>
+    <a class="card" href="/internal-linking/">
+      <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+      <h2>Internal linking tool</h2>
+      <p>Internal link suggestions for a new draft, plus existing pages that should link to it, with the anchor in context.</p>
+      <ul><li>Paste, .docx, live URL or Google Doc</li><li>Links to and from the draft</li><li>Site-wide internal link audit</li></ul>
+      <span class="open">Open →</span>
+    </a>
+  </div>
+  <div class="note"><b>Your keys stay with you.</b> Each tool runs on your own Moz API token and Claude API key, saved in your browser. Add them in each tool's Settings.</div>
+</main>
+<footer>Built with the Moz API and Claude.</footer>
+</body>
+</html>
